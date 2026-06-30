@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Pookie ✨</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= LOADING SCREEN ================= -->
+
+<section id="loading">
+
+    <div class="loading-content">
+
+        <h1>Made Especially for</h1>
+
+        <h2>Our Birthday Girl ✨</h2>
+
+        <div class="loader">
+
+            <span></span>
+
+        </div>
+
+        <p>Loading your surprise...</p>
+
+    </div>
+
+</section>
+
+<!-- ================= BACKGROUND ================= -->
+
+<div class="stars"></div>
+
+<div class="petals"></div>
+
+<canvas id="fireworks"></canvas>
+
+<!-- ================= WELCOME ================= -->
+
+<section class="page active" id="welcome">
+
+    <div class="card">
+
+        <h1>Happy Birthday</h1>
+
+        <h2>Pookie 🌸</h2>
+
+        <p>
+
+            I made a little birthday surprise for you.
+
+            <br>
+
+            I hope it brings a smile to your face.
+
+        </p>
+
+        <button id="startBtn">
+
+            💌 Open My Birthday Message
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= ENVELOPE ================= -->
+
+<section class="page" id="envelopePage">
+
+    <div class="card">
+
+        <div class="envelope">
+
+            <div class="flap"></div>
+
+            <div class="body"></div>
+
+        </div>
+
+        <h2>A Little Letter For You</h2>
+
+        <button id="openEnvelope">
+
+            Open Letter ✨
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= LETTER ================= -->
+
+<section class="page" id="letterPage">
+
+    <div class="letter-card">
+
+        <h2>Dear Pookie, 🌸</h2>
+
+        <p>
+
+            Happy Birthday!
+
+        </p>
+
+        <p>
+
+            Even though we haven't met many times and don't know each other that well,
+
+            I wanted to make something special just for you.
+
+        </p>
+
+        <p>
+
+            Sometimes just a few conversations are enough to leave a good impression,
+
+            and you're one of those people.
+
+        </p>
+
+        <p>
+
+            I know you through my big brother,
+
+            and I wanted to wish you in a way that you might remember.
+
+        </p>
+
+        <p>
+
+            I hope this little surprise makes your birthday a little more special.
+
+        </p>
+
+        <p>
+
+            Wishing you happiness,
+
+            good health,
+
+            success,
+
+            and many wonderful memories ahead.
+
+        </p>
+
+        <p class="sign">
+
+            Happy Birthday once again! ✨
+
+        </p>
+
+        <button id="wishPageBtn">
+
+            Continue 🎉
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= WISH ================= -->
+
+<section class="page" id="wishPage">
+
+    <div class="card">
+
+        <h1>Best Wishes</h1>
+
+        <h2>For Your Special Day</h2>
+
+        <p class="typing">
+
+            May your birthday be filled with laughter,
+
+            happiness,
+
+            beautiful memories,
+
+            and everything you wish for.
+
+        </p>
+
+        <button id="cakePageBtn">
+
+            Continue 🎂
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= CAKE ================= -->
+
+<section class="page" id="cakePage">
+
+    <div class="card">
+
+        <h1>Make A Birthday Wish ✨</h1>
+
+        <img
+
+        src="assets/images/cake.jpg"
+
+        class="cake"
+
+        alt="Birthday Cake">
+
+        <p>
+
+            Close your eyes,
+
+            make a wish,
+
+            and blow the candle.
+
+        </p>
+
+        <button id="blowBtn">
+
+            🕯 Blow Candle
+
+        </button>
+
+        <button id="galleryBtn">
+
+            Continue 📸
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section class="page" id="galleryPage">
+
+    <h1>A Few Beautiful Moments 📸</h1>
+
+    <div class="gallery">
+
+        <div class="photo">
+
+            <img src="assets/images/photo1.jpg">
+
+            <p>✨</p>
+
+        </div>
+
+        <div class="photo">
+
+            <img src="assets/images/photo2.jpg">
+
+            <p>🌸</p>
+
+        </div>
+
+        <div class="photo">
+
+            <img src="assets/images/photo3.jpg">
+
+            <p>🎉</p>
+
+        </div>
+
+    </div>
+
+    <button id="thankBtn">
+
+        Continue 🌸
+
+    </button>
+
+</section>
+
+<!-- ================= THANK YOU ================= -->
+
+<section class="page" id="thankPage">
+
+    <div class="card">
+
+        <h1>Thank You 🌸</h1>
+
+        <p>
+
+            Thank you for taking a few moments
+
+            to go through this little surprise.
+
+        </p>
+
+        <p>
+
+            Keep smiling,
+
+            stay happy,
+
+            and have an amazing year ahead.
+
+        </p>
+
+        <button id="finalBtn">
+
+            Final Surprise 🎆
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= FINAL ================= -->
+
+<section class="page" id="finalPage">
+
+    <div class="card final-card">
+
+        <h1>Happy Birthday</h1>
+
+        <h2>Pookie ✨</h2>
+
+        <p>
+
+            May every dream come true.
+
+            <br><br>
+
+            Stay happy.
+
+            <br>
+
+            Stay blessed.
+
+            <br>
+
+            Keep smiling.
+
+        </p>
+
+        <div class="celebrate">
+
+            🎉 🎂 🎊 🌸 ✨ 🎈
+
+        </div>
+
+        <button id="replayBtn">
+
+            🔄 Replay Surprise
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= MUSIC ================= -->
+
+<audio id="music" loop>
+
+    <source src="assets/music/birthday.mp3" type="audio/mp3">
+
+</audio>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
